@@ -18,7 +18,26 @@ function Board() {
             }
         
         console.log(gridState)
+        let row = [0, 1, 2, 3, 4, 5, 6, 7]
+        let collumn = [0, 1, 2, 3, 4, 5, 6, 7]
         
+        row.forEach(r => {
+            collumn.forEach( c => {
+                if (gridState[r][c] === 1 && (r <=2)){
+                    gridState[r][c] = "r"
+                }
+                if (gridState[r][c] === 1 && (r >= 5)){
+                    gridState[r][c] = "b"
+                }
+            })
+        })
+
+
+
+    }
+
+    const ButtonOnClick = (value) =>{
+        console.log(value)
     }
 
     const DivSkeleton = () => {
@@ -28,10 +47,23 @@ function Board() {
         let collumn = [0, 1, 2, 3, 4, 5, 6, 7]
         return [
             <div>
-                {row.map( r => <div>{ collumn.map( c => <Button>{gridState[r][c]}</Button>)}</div>)}
-            <div>
-                {collumn.map( c => <Button>{gridState[0][c]}</Button>)}
-            </div>
+                {row.map( r => <div>{ collumn.map( c => {
+                if (gridState[r][c] == "r") {
+                    return (<Button onClick={ButtonOnClick} className="red_checker">{gridState[r][c]}</Button>)
+                }
+
+                else if (gridState[r][c] == "b") {
+                    return (<Button className="blue_checker">{gridState[r][c]}</Button>)
+                }
+
+                else {
+                    return (<Button>{gridState[r][c]}</Button>)
+                }
+                
+                
+                
+                })}</div>)}
+            
             </div>
 
         ]

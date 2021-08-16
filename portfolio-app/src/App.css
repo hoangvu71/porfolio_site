@@ -15,3 +15,18 @@ body{
     background-color: lightblue;
 
 }
+
+Button{
+    width:50px;
+    height:50px;
+}
+
+.red_checker{
+    background-color: red;
+    border: none
+}
+
+.blue_checker{
+    background-color: blue;
+    border: none
+}
