@@ -30,3 +30,11 @@ Button{
     background-color: blue;
     border: none
 }
+
+.red_chosen{
+    background-color: rgb(250, 35, 35, 0.5);
+}
+
+.neighbor_chosen{
+    background-color: rgb(212, 206, 206);
+}
