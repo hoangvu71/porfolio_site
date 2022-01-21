@@ -2,27 +2,40 @@ body{
     background-color: rgb(231, 231, 231);
 }
 
+.movable{
+    background-color: rgb(236, 232, 232);
+}
+
 .checkers_modal{
     position: fixed;
     bottom: 0px;
     right: 0px;
 }
 
+
 .modal_content{
     margin: 0 auto;
-    height: 80vh;
-    width: 80vw;
-    background-color: lightblue;
-
+    width: 40vw;
+    height: 40vw;
+    border: 1px solid grey;
 }
 
+
+
+
 Button{
-    width:50px;
-    height:50px;
+    width:5vw;
+    height:5vw;
+    border: 1px solid grey;
 }
 
 .red_checker{
     background-color: red;
+    border: none
+}
+
+.red_king_checker{
+    background-color: rgb(54, 2, 2);
     border: none
 }
 
@@ -38,3 +51,21 @@ Button{
 .neighbor_chosen{
     background-color: rgb(212, 206, 206);
 }
+
+.blue_king_checker{
+    background-color: rgb(12, 12, 87);
+}
+
+.blue_has_won{
+    color: blue;
+    background-color: blue;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+
+
+
+

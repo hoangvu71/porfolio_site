@@ -10,6 +10,7 @@ function App() {
 
   const openModal = () => {
     setShowModal(prev => !prev);
+    
   }
 
 

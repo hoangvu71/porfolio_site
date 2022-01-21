@@ -4,7 +4,7 @@ import Board from './Board';
 function Checkers({ showModal, setShowModal}) {
   return (
     <>
-        <div>{showModal ? <div><Board /></div> : null}</div>
+        <div>{showModal ? <div><Board/></div> : null}</div>
         
     </>
     
